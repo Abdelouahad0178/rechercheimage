@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de carreaux par couleur et veines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recherche de carreaux par couleur et veines</h1>
+        <div class="upload-section">
+            <input type="file" id="upload-image" accept="image/*" class="upload-input">
+            <button id="open-camera-rear" class="button">Utiliser la caméra arrière</button>
+            <button id="open-camera-front" class="button">Utiliser la caméra avant</button>
+        </div>
+        <video id="video" width="320" height="240" autoplay style="display: none;"></video>
+        <button id="capture" class="button" style="display: none;">Capturer</button>
+        <div id="gallery" class="gallery">
+            <!-- Les images de la galerie seront chargées dynamiquement ici -->
+        </div>
+        <div id="result" class="result">
+            <!-- Le résultat de la recherche sera affiché ici -->
+        </div>
+    </div>
+    <script src="https://docs.opencv.org/4.x/opencv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
